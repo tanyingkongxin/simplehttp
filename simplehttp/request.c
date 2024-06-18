@@ -10,6 +10,8 @@
 
 extern int simplehttp_logging;
 
+simplehttp_reqs_t simplehttp_reqs;
+
 struct simplehttp_request *simplehttp_request_new(struct evhttp_request *req, uint64_t id)
 {
     struct simplehttp_request *s_req;
